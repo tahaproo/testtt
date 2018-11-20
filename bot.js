@@ -75,7 +75,7 @@ client.on('message', message => {
 		let timecooldown = '1hour';
 		if(!devs.includes(message.author.id)) return;
 		if(cooldownSetName.has(message.author.id)) return message.reply(`**${ms(ms(timecooldown))}** يجب عليك الانتظار`);
-		if(!args1) return message.channel.send(`** ↝ Useage:** ${prefix}setname \`\`GaintBot\`\``).then(msg => msg.delete(7000));
+		if(!args1) return message.channel.send(`** ↝ Useage:** ${prefix}setname \`\`CrazyBot\`\``).then(msg => msg.delete(7000));
 		if(args1 == client.user.username) return message.reply('**البوت مسمى من قبل بهذا الاسم**').then(msg => msg.delete(5000));
 		
 		cooldownSetName.add(message.author.id);
@@ -103,28 +103,28 @@ client.on('message', message => {
 		}
 		if(command == prefix + 'setplay') {
 			if(!devs.includes(message.author.id)) return;
-			if(!args1) return message.channel.send(`** ↝ Useage:** ${prefix}setplay \`\`www.Gaint-Plus.com\`\``).then(msg => msg.delete(7000));
+			if(!args1) return message.channel.send(`** ↝ Useage:** ${prefix}setplay \`\`www.Crazy-World.com\`\``).then(msg => msg.delete(7000));
 			client.user.setActivity(args1);
 			message.reply(`\`\`${args1}\`\` **تم تغيير حالة اللعب الى**`).then(msg => msg.delete(5000));
 			message.delete();
 		};
 		if(command == prefix + 'setwatch') {
 			if(!devs.includes(message.author.id)) return;
-			if(!args1) return message.channel.send(`** ↝ Useage:** ${prefix}setwatch \`\`www.Gaint-Plus.com\`\``).then(msg => msg.delete(7000));
+			if(!args1) return message.channel.send(`** ↝ Useage:** ${prefix}setwatch \`\`www.www.Crazy-World.com\`\``).then(msg => msg.delete(7000));
 			client.user.setActivity(args1, { type: 'WATCHING' });
 			message.reply(`\`\`${args1}\`\` **تم تغيير حالة المشاهدة الى**`).then(msg => msg.delete(5000));
 			message.delete();
 		};
 		if(command == prefix + 'setlisten') {
 			if(!devs.includes(message.author.id)) return;
-			if(!args1) return message.channel.send(`** ↝ Useage:** ${prefix}setlisten \`\`www.Gaint-Plus.com\`\``).then(msg => msg.delete(7000));
+			if(!args1) return message.channel.send(`** ↝ Useage:** ${prefix}setlisten \`\`www.Crazy-World.com\`\``).then(msg => msg.delete(7000));
 			client.user.setActivity(args1, { type: 'LISTENING' });
 			message.reply(`\`\`${args1}\`\` **تم تغيير حالة السماع الى**`).then(msg => msg.delete(5000));
 			message.delete();
 		};
 	    if(command == prefix + 'setstream') {
 			if(!devs.includes(message.author.id)) return;
-			if(!args1) return message.channel.send(`** ↝ Useage:** ${prefix}setstream \`\`www.Gaint-Plus.com\`\``).then(msg => msg.delete(7000));
+			if(!args1) return message.channel.send(`** ↝ Useage:** ${prefix}setstream \`\`www.Crazy-World.com\`\``).then(msg => msg.delete(7000));
 			client.user.setActivity(args1, 'https://www.twitch.tv/xiaboodz_');
 			message.reply(`\`\`${args1}\`\` **تم تغيير حالة البث الى**`).then(msg => msg.delete(5000));
 			message.delete();
@@ -186,7 +186,7 @@ client.on('message', message => {
   .setTimestamp()
   .setFooter(`${message.author.username}#${message.author.discriminator}`, message.author.avatarURL)
 
-  let warnchannel = message.guild.channels.find(`name`, "Gaintbot-log");
+  let warnchannel = message.guild.channels.find(`name`, "log");
   if(!warnchannel) return;
 
   warnchannel.send(warnEmbed);
@@ -496,7 +496,7 @@ message.reply('**عندك اعدادات الخصوصيه لا يمكنني ان
 
 ⫸【11】 \`\`${prefix}bc <bc words>\`\` 『لارسال رسالة الى جميع اعضاء السيرفر』
 
-**◄════════════► [ Gaint-Plus ] ◄════════════►**`);
+**◄════════════► [Crazy-World] ◄════════════►**`);
 		message.reply('**شوف الخاص :envelope_with_arrow:**').then(msg => msg.delete(3000));
 		message.delete();
 	};
@@ -1258,8 +1258,8 @@ client.on('messageDelete', message => {
 	.setDescription(`**\n ↝ الاسم:**\n<@${message.author.id}>\n\n** ↝ الرسالة التي تم مسحها:**\n\`\`\`${message}\`\`\`\n** ↝ في روم:**\n${message.channel}`)
 	.setTimestamp()
 	.setFooter(`${message.author.username}#${message.author.discriminator}`, message.author.avatarURL)
-	if(!message.guild.channels.find('name', 'Gaintbot-log')) return;
-	message.guild.channels.find('name', 'Gaintbot-log').send(MsgDelete);
+	if(!message.guild.channels.find('name', 'log')) return;
+	message.guild.channels.find('name', 'log').send(MsgDelete);
 });
 
 client.on('messageUpdate', (oldMessage, newMessage) => {
@@ -1272,13 +1272,13 @@ client.on('messageUpdate', (oldMessage, newMessage) => {
 	.setDescription(`**\n ↝ الاسم:**\n<@${newMessage.author.id}>\n\n** ↝ قبل التعديل:**\n\`\`\`${oldMessage}\`\`\`\n** ↝ بعد التعديل:**\n\`\`\`${newMessage}\`\`\`\n** ↝ في روم:**\n${newMessage.channel}`)
 	.setTimestamp()
 	.setFooter(`${newMessage.author.username}#${newMessage.author.discriminator}`, newMessage.author.avatarURL)
-	if(!guild.channels.find('name', 'Gaintbot-log')) return;
-	guild.channels.find('name', 'Gaintbot-log').send(MsgEdit);
+	if(!guild.channels.find('name', 'log')) return;
+	guild.channels.find('name', 'log').send(MsgEdit);
 });
 
 // عند صناعة رتبه او مسحها
  client.on("roleCreate", rc => {
-	 var channel = rc.guild.channels.find("name", "Gaintbot-log");
+	 var channel = rc.guild.channels.find("name", "log");
 	 if(!channel) return;
 	 rc.guild.fetchAuditLogs()
 	 .then(logs => {
@@ -1296,7 +1296,7 @@ client.on('messageUpdate', (oldMessage, newMessage) => {
 });
 
 client.on("roleDelete", rd => {
-	 var channel = rd.guild.channels.find("name", "Gaintbot-log");
+	 var channel = rd.guild.channels.find("name", "log");
 	 if(!channel) return;
 	 rd.guild.fetchAuditLogs()
 	 .then(logs => {
@@ -1316,7 +1316,7 @@ client.on("roleDelete", rd => {
 // عند صناعة روم او مسحه
 client.on('channelCreate', cc => {
 	if(!cc.guild) return;
-	 var channel = cc.guild.channels.find('name', 'Gaintbot-log');
+	 var channel = cc.guild.channels.find('name', 'log');
 	 if(!channel) return;
 	 cc.guild.fetchAuditLogs()
 	 .then(logs => {
@@ -1334,7 +1334,7 @@ client.on('channelCreate', cc => {
 });
 
 client.on('channelDelete', dc => {
-	 var channel = dc.guild.channels.find("name", "Gaintbot-log");
+	 var channel = dc.guild.channels.find("name", "log");
 	 if(!channel) return;
 	 dc.guild.fetchAuditLogs()
 	 .then(logs => {
@@ -1373,7 +1373,7 @@ client.on('guildMemberAdd', member => {
     .setTimestamp()
     .setFooter(`${member.user.username}#${member.user.discriminator}`, member.user.avatarURL)
     if(!member.guild.channels.find('name', 'Gaintbot-log')) return;
-    member.guild.channels.find('name', 'Gaintbot-log').send(memberjoin);
+    member.guild.channels.find('name','log').send(memberjoin);
 });
 
 
@@ -1398,8 +1398,8 @@ client.on('guildMemberRemove', member => {
 	.setTimestamp()
 	.setFooter(`${member.user.username}#${member.user.discriminator}`, member.user.avatarURL)
 	
-	if(!member.guild.channels.find('name', 'Gaintbot-log')) return;
-	member.guild.channels.find('name', 'Gaintbot-log').send(memberleft);
+	if(!member.guild.channels.find('name', 'log')) return;
+	member.guild.channels.find('name', 'log').send(memberleft);
 });
    
    
