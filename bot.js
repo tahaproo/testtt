@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const canvas = require('canvas');
 const jimp = require('jimp');
-const prefix = '#';
+const prefix = '*';
 const axios = require('axios');
 const fs = require('fs');
 const ms = require('ms');
@@ -173,7 +173,7 @@ client.on('message', message => {
     if (err) console.log(err)
   });
 
-  wUser.send(`**◄══════════► [ Gaint-Plus ] ◄══════════►**\n\n\n** ↝ لقد اخذت وارن**\n\n** ↝ في سيرفر:**\n ↝ [ ${message.guild.name} ]\n\n** ↝ بواسطة:**\n ↝ [ ${message.author.username}#${message.author.discriminator} ]\n\n** ↝ السبب:**\n ↝ [ ${reason} ]\n\n** ↝ الوارن رقم:**\n ↝[ ${warns[wUser.id].warns} ]\n\n\n**◄══════════► [ Gaint-Plus ] ◄══════════►**`);
+  wUser.send(`****◄════════════► [Crazy-World] ◄════════════►****\n\n\n** ↝ لقد اخذت وارن**\n\n** ↝ في سيرفر:**\n ↝ [ ${message.guild.name} ]\n\n** ↝ بواسطة:**\n ↝ [ ${message.author.username}#${message.author.discriminator} ]\n\n** ↝ السبب:**\n ↝ [ ${reason} ]\n\n** ↝ الوارن رقم:**\n ↝[ ${warns[wUser.id].warns} ]\n\n\n**◄══════════► [ Gaint-Plus ] ◄══════════►**`);
 
   let warnEmbed = new Discord.RichEmbed()
   .setTitle(':no_entry_sign: **[WARN]**')
@@ -299,30 +299,6 @@ if(warns[wUser.id].warns == 2){
 
 
 
-// كود صددام
-	if(command == prefix + '9dAmm') {
-		var For9dAmm = ['325165115131428864'];
-		if(command === '9dAmm') return;
-		if(!For9dAmm.includes(message.author.id)) return message.reply('**! هذا الامر لجنرالل صددام فقط**').then(msg => msg.delete(3000));
-	let e9dAmm = new Discord.RichEmbed()
-	.setTitle(`:open_file_folder: [**${message.author.username}#${message.author.discriminator}**] معلومات عن`)
-	.setThumbnail(message.author.avatarURL)
-	.setColor('#fdf600')
-	.addField(':crown: **الاسم:**', '** ↝** !جنرالل صددام', true)
-	.addField(':crown: **العمر:**', '** ↝** 20', true)
-	.addField(':crown: **الرتبة:**', '** ↝** Co-Owner', true)
-	.addField(':crown: **الاسم بالدسكورد:**', `<@${message.author.id}>`, true)
-	.addField(':crown: **تاريخ انشاء الحساب:**', `** ↝** ${message.author.createdAt.toLocaleString()}`, true)
-	.addField(':crown: **الايدي:**', `${message.author.id}`, true)
-	.addField(':crown: **التاق:**', `** ↝** #${message.author.discriminator}`, true)
-	.addField(':crown: **تاريخ الدخول الى السيرفر:**', `** ↝** ${message.member.joinedAt.toLocaleString()}`, true)
-	.setTimestamp()
-	.setFooter(`[ 9dAmm ] Is Here.`, message.author.avatarURL)
-	message.channel.send(e9dAmm)
-	};
-
-
-
 // كود البنق
 	if(command == prefix + 'ping') {
 		if(message.author.bot) return;
@@ -337,7 +313,7 @@ if(warns[wUser.id].warns == 2){
 // كود الهلب
     if(command == prefix + 'Games') {
 		message.channel.send(`
-◄════════════► [ Gaint-Plus ] ◄════════════►
+**◄════════════► [Crazy-World] ◄════════════►**
 
 :joystick: **اوامر الالعاب**
 
@@ -353,32 +329,19 @@ if(warns[wUser.id].warns == 2){
 
 ⫸【6】 ${prefix}
 
-◄════════════► [ Gaint-Plus ] ◄════════════►
+**◄════════════► [Crazy-World] ◄════════════►**
 `);
 	};
     if (command == prefix + 'help-member') {
 		message.author.send(`
-**◄════════════► [ Gaint-Plus ] ◄════════════►**
+**◄════════════► [Crazy-World] ◄════════════►**
 
 :dividers: **الاوامر العامة**
-
-⫸【1】 \`\`${prefix}sug <Your Sug>\`\` 『لارسال اقتراحك الى روم الاقتراحات』
-
-⫸【2】 \`\`${prefix}survival\`\` 『لمعرفة شروط السرفايفل وكيفية الدخول』
 
 ⫸【3】 \`\`${prefix}find <someone>\`\` 『للبحث عن الاعضاء الذين يوجد في اسمائهم الحروف التي كتبتها』
 
 ⫸【4】 \`\`${prefix}discrim\`\` **OR** \`\`${prefix}disscrim 9999\`\` <- (_example_) 『للبحث عن الاعضاء الذين لديهم التاق حقك 』
 
-⫸【5】 \`\`${prefix}id\`\` **OR** \`\`${prefix}id <mention>\`\` 『لرؤية جميع المعلومات عنك وعن الاخرين』
-
-⫸【6】 \`\`${prefix}voice-online\`\` 『لرؤية اسماء المتواجدين بالصوت』
-
-⫸【7】 \`\`${prefix}myid\`\` 『لرؤية الايدي الخاص بحسابك』
-
-⫸【8】 \`\`${prefix}avatar\`\` **OR** \`\`${prefix}avatar <mention>\`\` 『لرؤية صورة البروفايل حقك او حق الاخرين』
-
-⫸【9】 \`\`${prefix}ping\`\` 『لمعرفة شروط السرفايفل وكيفية الدخول』
 
 :joystick: **اوامر الالعاب**
 
@@ -396,7 +359,7 @@ if(warns[wUser.id].warns == 2){
 
 ⫸【7】 \`\`${prefix}points\`\` **OR** \`\`${prefix}points <mention>\`\` 『لرؤية نقاطك او نقاط اشخاص اخرين باللعبه』
 
-**◄════════════► [ Gaint-Plus ] ◄════════════►**`).catch(err =>{console.log('[LOG] =>' + err);
+**◄════════════► [ Crazy-World ] ◄════════════►**`).catch(err =>{console.log('[LOG] =>' + err);
 message.reply('**عندك اعدادات الخصوصيه لا يمكنني ان ارسل الى الخاص حقك**').then(msg => msg.delete(5000));
 });
 
@@ -406,7 +369,7 @@ message.reply('**عندك اعدادات الخصوصيه لا يمكنني ان
     if (command == prefix + 'help-staff') {
 		if(!message.member.hasPermission('MUTE_MEMBERS')) return;
 		message.author.send(`
-**◄════════════► [ Gaint-Plus ] ◄════════════►**
+**◄════════════► [Crazy-World] ◄════════════►**
 
 :dividers: **الاوامر العامة**
 
@@ -454,14 +417,14 @@ message.reply('**عندك اعدادات الخصوصيه لا يمكنني ان
 
 ⫸【4】 \`\`${prefix}clear <number>\`\` 『لمسح الشات بعدد』
 
-**◄════════════► [ Gaint-Plus ] ◄════════════►**`);
+**◄════════════► [Crazy-World] ◄════════════►**`);
 		message.reply('**شوف الخاص :envelope_with_arrow:**').then(msg => msg.delete(3000));
 		message.delete();
 	};
     if(command == prefix + 'help-admin') {
 		if(!message.member.hasPermission('ADMINISTRATOR')) return;
 		message.author.send(`
-**◄════════════► [ Gaint-Plus ] ◄════════════►**
+**◄════════════► [Crazy-World] ◄════════════►**
 
 :dividers: **الاوامر العامة**
 
@@ -660,46 +623,7 @@ message.reply('**عندك اعدادات الخصوصيه لا يمكنني ان
 
 
 
-// كود السرفايفل
-	if(command == prefix + 'survival') {
-		if(args1) return;
-		message.author.send(':no_entry: **قوانين دخول سيرفر السرفايفل** :no_entry: \n\n**- 1 ?** ۏ㡇ԊϏȣ ȡ戟 Ȧ 䧏Ȋ ȡܔ 䌡 ȟԑȭ \n**- 2 ?** ۏ㡇┈ 爡Պ㡜n**- 3 ?** ۏ㡇⋎ҭȠۡ졇√ׇ`\n\n**Version ?** 1.13 \n**࠭ޭɠȡЎ硠ȡ졓Ѡȡԑއ** \n**ˑ獠ȡ졑磠ȡȦȣѠ狟ˈ** \n*survival join ȓ䟠ɣȭ堑ȝʠ\n**狤˙Ѡȡҏ** \n\n**ȐǠˣ ҝן 䤤皠˓筪* \n*survival join \n**䒥 ̇宥 爡ǠԊĎР爑䪪')
-		message.reply('**شوف الخاص :envelope_with_arrow:**').then(msg => msg.delete(5000))
-		message.delete();
-	};
-	if(command == prefix + 'survival-dc') {
-		if(message.author.id !== '282350776456839169') return message.reply('**هذا الامر فقط لاونر سيرفر السرفايفل**');
-		if(!muf) return message.reply('**منشن الشخص**');
-		if(!cooldownSurvival.has(muf.id)) return message.channel.send(`<@${muf.id}> Is not found in **Cooldown.**`);
-		
-		cooldownSurvival.delete(muf.id);
-		message.reply(`Successfully remove <@${muf.id}> from **Cooldown**`);
-	}
-
-
-
-// كود الافاتار
-    if(command == prefix + 'avatar') {
-		var msg1;
-		if(muf) {
-			var msg1 = muf;
-			}else {
-				var msg1 = message.author;
-			}
-			
-			var avatarImage = new Discord.RichEmbed()
-			.setColor('#36393e')
-			.setTitle(`:white_check_mark: <@${msg1.id}>'s **Avatar:**`)
-			.setImage(`${msg1.avatarURL}`)
-			.setTimestamp()
-			.setFooter(msg1.tag, msg1.avatarURL)
-			
-			message.channel.send(avatarImage);
-	};
-
-
-
-// كود مسح الشات
+	
     if(command == prefix + 'clear') {
 		if(message.author.bot) return;
 		if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply('\`\`MANAGE_MESSAGES\`\` **انت لا تمتلك صلاحية**').then(msg => msg.delete(5000));
@@ -1541,25 +1465,10 @@ client.on('guildMemberRemove', member => {
 
 #pubg | ببجي
 
-  سيرفر الرئيسي | Offical Server [ <:globe_with_meridians:409259794554290177> ]
-
-سيرفر الدعم الفني | Support Server [ <:support:494431949192953866> ]
 
 
 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-
-     مبرمج البوت | Developers
-
-
-[ <@202745501345382400> ]
-
-[ <@461766920400535552> ]
-
-© 2018 جاينت قايمز | GaintGames
-
-[ We will support fully English language Coming soon ]
-
  **
 `)
    message.channel.send(e).then(m => m.delete(5000))
