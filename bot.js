@@ -173,7 +173,7 @@ client.on('message', message => {
     if (err) console.log(err)
   });
 
-  wUser.send(`****◄════════════► [Crazy-World] ◄════════════►****\n\n\n** ↝ لقد اخذت وارن**\n\n** ↝ في سيرفر:**\n ↝ [ ${message.guild.name} ]\n\n** ↝ بواسطة:**\n ↝ [ ${message.author.username}#${message.author.discriminator} ]\n\n** ↝ السبب:**\n ↝ [ ${reason} ]\n\n** ↝ الوارن رقم:**\n ↝[ ${warns[wUser.id].warns} ]\n\n\n**◄══════════► [ Gaint-Plus ] ◄══════════►**`);
+  wUser.send(`****◄════════════► [Crazy-World] ◄════════════►****\n\n\n** ↝ لقد اخذت وارن**\n\n** ↝ في سيرفر:**\n ↝ [ ${message.guild.name} ]\n\n** ↝ بواسطة:**\n ↝ [ ${message.author.username}#${message.author.discriminator} ]\n\n** ↝ السبب:**\n ↝ [ ${reason} ]\n\n** ↝ الوارن رقم:**\n ↝[ ${warns[wUser.id].warns} ]\n\n\n**◄════════════► [Crazy-World] ◄════════════►**`);
 
   let warnEmbed = new Discord.RichEmbed()
   .setTitle(':no_entry_sign: **[WARN]**')
@@ -1372,7 +1372,7 @@ client.on('guildMemberAdd', member => {
     .addField(':date: **تاريخ الدخول الى السيرفر:**', `${moment(member.joinedAt).format('D/M/YYYY h:mm a ')} \n\`\`${moment(member.joinedAt).startOf(' ').fromNow()}\`\``, true)
     .setTimestamp()
     .setFooter(`${member.user.username}#${member.user.discriminator}`, member.user.avatarURL)
-    if(!member.guild.channels.find('name', 'Gaintbot-log')) return;
+    if(!member.guild.channels.find('name', 'log')) return;
     member.guild.channels.find('name','log').send(memberjoin);
 });
 
