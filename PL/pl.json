@@ -1,0 +1,103 @@
+[
+    {
+	
+	        "image": "./Logos/amazon.jpg",
+        "answers": ["امازون"]
+    },
+    {
+
+	        "image": "./Logos/discord.jpg",
+
+        "answers": ["دسكورد"]
+    },
+    {
+
+	        "image": "./Logos/facebook.jpg",
+
+        "answers": ["فيس بوك"]
+    },
+    {
+
+	        "image": "./Logos/gmail.jpg",
+
+        "answers": ["جميل"]
+    },
+    {
+
+	        "image": "./Logos/instagram.jpg",
+
+        "answers": ["انستا قرام"]
+    },
+    {
+
+	        "Logos": "./Logos/itunes.jpg",
+
+        "answers": ["اي تونز"]
+    },
+    {
+
+	        "image": "./Logos/netflix.jpg",
+
+        "answers": ["نت فلكس"]
+    },
+    {
+
+	        "image": "./Logos/paypal.jpg",
+
+        "answers": ["باي بال"]
+    },
+    {
+
+	        "image": "./Logos/snapchat.jpg",
+
+        "answers": ["سناب شات"]
+    },
+    {
+
+	
+
+
+	        "image": "./Logos/spotify.jpg",
+
+        "answers": ["سبوتفي"]
+    },
+    {
+
+
+
+
+	        "image": "./Logos/steam.jpg",
+
+        "answers": ["ستيم"]
+    },
+    {
+
+
+
+
+	        "image": "./Logos/tumblr.jpg",
+
+        "answers": ["تمبلر"]
+    },
+    {
+
+
+
+
+	        "image": "./Logos/twitter.jpg",
+
+        "answers": ["تويتر"]
+    },
+    {
+
+
+
+
+	        "image": "./Logos/youtube.jpg",
+
+        "answers": ["يوتيوب"]
+    },
+{
+
+}
+]
