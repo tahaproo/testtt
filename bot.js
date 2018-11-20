@@ -10,7 +10,7 @@ const path = require('path');
 const moment = require('moment');
 const yt = require('ytdl-core');
 const request = require('request');
-const devs = ['202745501345382400', '461766920400535552', '202745501345382400', '461766920400535552', '202745501345382400', '202745501345382400'];
+const devs = ['498132773878628353'];
 
 var cooldownGames = new Set();
 var cooldownSurvival = new Set();
@@ -1416,24 +1416,16 @@ client.on('guildMemberRemove', member => {
          .setURL('')
          .setDescription(`
  **
-╭━━━╮╱╱╱╱╱╱╭╮╭━━━╮
-┃╭━╮┃╱╱╱╱╱╭╯╰┫╭━╮┃
-┃┃╱╰╋━━┳┳━╋╮╭┫┃╱╰╋━━┳╮╭┳━━┳━━╮
-┃┃╭━┫╭╮┣┫╭╮┫┃┃┃╭━┫╭╮┃╰╯┃┃━┫━━┫
-┃╰┻━┃╭╮┃┃┃┃┃╰┫╰┻━┃╭╮┃┃┃┃┃━╋━━┃
-╰━━━┻╯╰┻┻╯╰┻━┻━━━┻╯╰┻┻┻┻━━┻━━╯
-
-
 
 الأوامر | Commands
 
-    البرفكس الخاص بالبوت [ # ] Bot Prefix
+    البرفكس الخاص بالبوت [ * ] Bot Prefix
 
     لعرض النقاط الخاصة بك [ #points - #نقاطي ] To display your points
 
-    قائمة المتصدرين للسيرفر [ #top - #توب ] Guild Leaderboard    ( قريبا | Comming Soon )
+    قائمة المتصدرين للسيرفر [ #top - #توب ] Guild Leaderboard    
 
-    قائمة المتصدرين في كافة السيرفرات [ #gtop - #الأفضل ] Global Leaderboardoard    ( قريبا | Comming Soon )
+    قائمة المتصدرين في كافة السيرفرات [ #gtop - #الأفضل ] Global Leaderboardoard  
 
     Number of games [ 10 ] عدد الألعاب
 
