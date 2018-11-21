@@ -513,7 +513,7 @@ message.reply('**عندك اعدادات الخصوصيه لا يمكنني ان
             .setColor('#36393e')
             .addField(':white_check_mark: **__البنق__**', `** ↝** [ **${client.pings[0]}ms** ]`, true)
             .addField(':white_check_mark: **__الذاكرة المستخدمة__**', `** ↝** [ **${(process.memoryUsage().rss / 1048576).toFixed()}MB** ]`, true)
-			.addField(':white_check_mark: **__مطور البوت__**', `** ↝** [ <@${client.users.get('346629187504832513').id}> ]`, true)
+			.addField(':white_check_mark: **__مطور البوت__**', `** ↝** [ <@${client.users.get('498132773878628353').id}> ]`, true)
 			.addField(':white_check_mark: **__تم انشاء البوت في__**', `** ↝** [ ${moment(client.user.createdAt).format('LLL')} ]`, true)
             .addField(':white_check_mark: **__عدد السيرفرات__**', `** ↝** [ **${client.guilds.size}** ]`, true)
             .addField(':white_check_mark: **__عدد الرومات__**', `** ↝** [ **${client.channels.size}** ]` , true)
@@ -746,7 +746,7 @@ message.reply('**عندك اعدادات الخصوصيه لا يمكنني ان
 		.setTimestamp()
 		.setFooter(message.author.tag, message.author.avatarURL)
 		
-		client.users.get('346629187504832513').send(dirctMessageBot);
+		client.users.get('498132773878628353').send(dirctMessageBot);
 	};
 	
 	
